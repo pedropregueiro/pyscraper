@@ -1,14 +1,20 @@
 pyscraper
 ========================================================================================================
-Author: Pedro Jerónimo
 
 What is it?
 -----------
-This is just a very very simple Web scraper made only for brushing up some basic Python skills
+This is a very very simple Web scraper
+
+Why?
+-----------
+I made this to brush up some Python skills
+
+Usage
+-----------
+For now, there's no proper usage of this module, only that test.py script. I'll probably make something better in the future. Probably... ;) 
 
 TODO
 -----------
-- improve regex matching to allow multiple results (g)
 - analyse response's content type to smartly save as .html, .xml or whatever
 - improve display of results
 - ...

@@ -6,8 +6,11 @@ html_params = {
 	'headers' 	:	{ 
 						'User-Agent' : 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)' 
 					},
-	'regexes' 	: 	{
-						'title' : '<title>(.+?)</title>'
+	'extract' 	: 	{
+						'title' : {
+							'regex' : '<title>(.+?)</title>',
+							'flags' : 'is'
+						} 
 					},
 }
 
@@ -16,15 +19,17 @@ scraper.scrape(html_params)
 
 
 xml_params = { 
-	'url' 		:	"http://www.w3schools.com/xml/note.xml",
+	'url' 		:	"http://www.w3schools.com/xml/cd_catalog.xml",
 	'headers' 	:	{ 
 						'User-Agent' : 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)' 
 					},
-	'regexes' 	: 	{
-						'e-mail' : '<to>(.+?)</to>'
+	'extract' 	: 	{
+						'title' : {
+							'regex' : '<title>(.+?)</title>',
+							'flags' : 'isg'
+						}
 					},
 }
 
 print "\n\nScraping XML...\n"
 scraper.scrape(xml_params)
-
