@@ -66,11 +66,3 @@ def _save_content(content):
 		sys.exit()
 
 
-
-## TODO:
-# . analyse response's content type to smartly save as .html, .xml or whatever
-# . improve regex matching to allow multiple results (g)
-# . improve display of results
-
-
-
